@@ -120,7 +120,7 @@ class ProductAdmin(admin.ModelAdmin):
              search_fields: Поля для поиска
     """
 
-    list_display = ('name', 'category')
+    list_display = ('id', 'name', 'category')
     list_filter = ('category', )
     search_fields = ('name', 'category__name' )
 

@@ -55,7 +55,7 @@ def do_import(self, url, user_id=None):
         if user_id is None:
             raise ValueError('Пользователь не указан')
         try:
-            user = User.objects.get(id=user_id, user_type='shop')
+            user = User.objects.get(id=user_id, type='shop')
         except ObjectDoesNotExist:
             raise ValueError("Пользователь не найден или не является магазином")
 

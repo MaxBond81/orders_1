@@ -56,7 +56,7 @@ def new_user_registered_signal(sender: Type[User], instance: User, created: bool
 
         msg = EmailMultiAlternatives(
             # title:
-            f"Password Reset Token for {instance.email}",
+            f"Password Confirm Token for {instance.email}",
             # message:
             token.key,
             # from:
